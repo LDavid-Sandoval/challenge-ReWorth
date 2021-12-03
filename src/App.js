@@ -1,15 +1,5 @@
-import DirectoryList from "ui/components/DirectoryList";
-
-const fetchOffersList = () => {
-    return [];
-};
+import DirectoryContainer from "./ui/containers/Directory/DirectoryContainer";
 
 export default function App() {
-    return (
-        <>
-            <p class="py-4 text-lg text-center">Start here :) Good luck!</p>
-
-            <DirectoryList offerList={fetchOffersList()} />
-        </>
-    );
+    return <DirectoryContainer />;
 }
