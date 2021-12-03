@@ -2,7 +2,7 @@ import React from "react";
 import DirectoryCard from "./DirectoryCard";
 import { StyledListContainer } from "./styledComponents";
 
-const DirectoryList = ({ offerList, errorData }) => {
+const DirectoryList = ({ offerList }) => {
     return (
         <StyledListContainer>
             {offerList?.data?.map((item, i) => {
