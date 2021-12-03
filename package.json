@@ -19,6 +19,8 @@
     "license": "ISC",
     "dependencies": {
         "@babel/runtime": "^7.10.1",
+        "ant": "^0.2.0",
+        "antd": "^4.17.2",
         "babel-plugin-auto-import": "^1.0.5",
         "eslint-config-standard-jsx": "^8.1.0",
         "loglevel": "^1.6.8",
@@ -29,7 +31,9 @@
         "preval.macro": "^5.0.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
+        "react-star-ratings": "^2.3.0",
         "recharts": "^1.8.5",
+        "styled-components": "^5.3.3",
         "stylelint-scss": "^3.17.1"
     },
     "devDependencies": {
@@ -49,13 +53,13 @@
         "babel-preset-nano-react-app": "^0.1.0",
         "cypress": "^4.9.0",
         "eslint": "^7.3.1",
-        "eslint-config-prettier": "^6.11.0",
+        "eslint-config-prettier": "^6.15.0",
         "eslint-config-standard": "^14.1.1",
         "eslint-import-resolver-alias": "^1.1.2",
         "eslint-plugin-import": "^2.22.0",
         "eslint-plugin-jsx-a11y": "^6.3.1",
         "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-prettier": "^3.4.1",
         "eslint-plugin-promise": "^4.2.1",
         "eslint-plugin-react": "^7.20.2",
         "eslint-plugin-react-hooks": "^4.0.4",
@@ -66,7 +70,7 @@
         "parcel-bundler": "^1.12.4",
         "parcel-plugin-bundle-visualiser": "^1.2.0",
         "parcel-plugin-less-js-enabled": "^1.0.2",
-        "prettier": "^2.0.5",
+        "prettier": "^2.5.0",
         "pretty-quick": "^2.0.1",
         "stylelint": "^13.3.3",
         "stylelint-config-rational-order": "^0.1.2",
@@ -87,13 +91,5 @@
         "trailingComma": "all",
         "arrowParens": "avoid",
         "jsxBracketSameLine": true
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "eslint src --fix; pretty-quick --staged; stylelint src/**/*.scss --fix",
-            "pre-push": "npm run test",
-            "post-merge": "npm install",
-            "post-checkout": "npm install"
-        }
     }
 }

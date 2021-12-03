@@ -1,27 +1,15 @@
 {
     "env": {
         "test": {
-            "presets": [
-                "@babel/preset-env"
-            ],
-            "plugins": [
-                "@babel/plugin-transform-modules-commonjs"
-            ]
+            "presets": ["@babel/preset-env"],
+            "plugins": ["@babel/plugin-transform-modules-commonjs"]
         }
     },
-    "presets": [
-        "nano-react-app"
-    ],
+    "presets": ["nano-react-app"],
     "plugins": [
-        [
-            "recharts"
-        ],
-        [
-            "lodash"
-        ],
-        [
-            "macros"
-        ],
+        ["recharts"],
+        ["lodash"],
+        ["macros"],
         [
             "ramda",
             {
@@ -50,7 +38,7 @@
             "import",
             {
                 "libraryName": "antd",
-                "style": true
+                "style": "css"
             },
             "antd"
         ],
@@ -73,16 +61,11 @@
                     {
                         "default": "React",
                         "path": "react",
-                        "members": [
-                            "useState",
-                            "useEffect"
-                        ]
+                        "members": ["useState", "useEffect"]
                     },
                     {
                         "path": "react-i18next",
-                        "members": [
-                            "useTranslation"
-                        ]
+                        "members": ["useTranslation"]
                     },
                     {
                         "default": "store",
